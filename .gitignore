@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+
+# Virtual Environment
+.env
+.venv/
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Project specific
+data/vectors/
+data/*.db
+web-ui/data/*.db
+*.log
+.cache
+.pytest_cache/
+
+# Coverage files
+.coverage
+htmlcov/
+coverage.xml
+
+
+# Frontend dependencies and generated files
+web-ui/node_modules/
+web-ui/.next/
+web-ui/out/
+
+# Environment secrets
+.env.*
+!.env.example
+!.env.*.example
+
+# Uploaded PDFs
+data/pdfs/uploads/
+
+# Python cache and test artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
