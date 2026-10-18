@@ -2,9 +2,9 @@
 
 A powerful local RAG (Retrieval Augmented Generation) application that lets you chat with your PDF documents using Ollama and LangChain. This project includes multiple interfaces: a modern Next.js web app, a Streamlit interface, and Jupyter notebooks for experimentation.
 
-[![Python Tests](https://github.com/tonykipkemboi/ollama_pdf_rag/actions/workflows/tests.yml/badge.svg)](https://github.com/tonykipkemboi/ollama_pdf_rag/actions/workflows/tests.yml)
 
-## ✨ Features
+
+
 
 - 🔒 **100% Local** - All processing happens on your machine, no data leaves
 - 📄 **Multi-PDF Support** - Upload and query across multiple documents
@@ -14,20 +14,7 @@ A powerful local RAG (Retrieval Augmented Generation) application that lets you 
 - 🔌 **REST API** - FastAPI backend for programmatic access
 - 📓 **Jupyter Notebooks** - For experimentation and learning
 
-## 🖼️ Screenshots
 
-### Next.js Interface (Recommended)
-![Next.js UI](nextjs_ui.png)
-*Modern chat interface with PDF management, source citations, and reasoning steps*
-
-### Streamlit Interface
-![Streamlit UI](st_app_ui.png)
-*Classic Streamlit interface with PDF viewer and chat functionality*
-
-## 📺 Video Tutorial
-<a href="https://youtu.be/ztBJqzBU5kc">
-  <img src="https://img.youtube.com/vi/ztBJqzBU5kc/hqdefault.jpg" alt="Watch the video" width="100%">
-</a>
 
 ## 🏗️ Project Structure
 ```
@@ -189,35 +176,4 @@ pre-commit install
 - **No chunks retrieved**: Re-upload PDFs to rebuild the vector database
 - **Port conflicts**: Check if ports 3000, 8001, or 8501 are in use
 
-### Common Errors
 
-#### ONNX DLL Error (Windows)
-```
-DLL load failed while importing onnx_copy2py_export
-```
-Install [Microsoft Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist) and restart.
-
-#### CPU-Only Systems
-Reduce chunk size if experiencing memory issues:
-- Modify `chunk_size` to 500-1000 in `src/core/document.py`
-
-## 🤝 Contributing
-
-- Open issues for bugs or suggestions
-- Submit pull requests
-- Comment on the YouTube video for questions
-- ⭐ Star the repository if you find it useful!
-
-## 📝 License
-
-This project is open source and available under the MIT License.
-
----
-
-## ⭐️ Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=tonykipkemboi/ollama_pdf_rag&type=Date)](https://star-history.com/#tonykipkemboi/ollama_pdf_rag&Date)
-
-Built with ❤️ by [Tony Kipkemboi](https://tonykipkemboi.com)
-
-Follow me on [X](https://x.com/tonykipkemboi) | [LinkedIn](https://www.linkedin.com/in/tonykipkemboi/) | [YouTube](https://www.youtube.com/@tonykipkemboi) | [GitHub](https://github.com/tonykipkemboi)
